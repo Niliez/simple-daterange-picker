@@ -61,4 +61,10 @@ class Daterangepicker extends Filter
 
         return $start->format('Y-m-d').' to '.$end->format('Y-m-d');
     }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+        return $this;
+    }
 }
